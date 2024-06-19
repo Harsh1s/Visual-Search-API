@@ -31,7 +31,12 @@ def get_neighbors(features, oss, k_neighbors=3):
     query = {
         "size": k_neighbors,
         "query": {
-            "knn": {"zalando_img_vector": {"vector": features, "k": k_neighbors}}
+            "knn": {
+                "zalando_img_vector": {
+                    "vector": features,
+                    "k": k_neighbors,
+                }
+            }
         },
     }
     res = oss.search(request_timeout=30, index=idx_name, body=query)
@@ -120,9 +125,5 @@ def lambda_handler(event, _):
             "Access-Control-Allow-Headers": "*",
             "Access-Control-Allow-Methods": "*",
         },
-        "body": json.dumps(
-            {
-                "images": s3_presigned_urls,
-            }
-        ),
+        "body": json.dumps({"images": s3_presigned_urls}),
     }
