@@ -1,7 +1,7 @@
-import Config from './config.json'
+import Config from './config.json';
 
 const config = {
-    apiEndpoint: Config.apiEndpoint,
-}
+  apiEndpoint: Config.apiEndpoint
+};
 
 export default config;
