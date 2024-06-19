@@ -1,5 +1,5 @@
 {
-  "name": "my-vue-app",
+  "name": "visual-search",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -21,7 +21,7 @@
     "@types/node": "^20.14.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "aws-amplify": "^4.3",
+    "aws-amplify": "^6.3.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

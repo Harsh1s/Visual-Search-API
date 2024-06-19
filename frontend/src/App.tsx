@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 
 import Drop from './components/Drop';
 import { FileWithPath } from '@mantine/dropzone';
-import { Button, Flex, Input, Select, Text } from '@mantine/core';
+import { Button, Flex, Grid, Input, Loader, Select, Text, Image } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 
 const App = () => {
@@ -18,17 +18,31 @@ const App = () => {
     data: responseData,
     isLoading,
     refetch: refetchData
-  } = useQuery({
+  } = useQuery<string[]>({
     queryKey: ['imageSearch', url, selectedFile, kValue],
     queryFn: async () => {
-      const request = makeAPIRequest(url, selectedFile, kValue);
+      const request = await makeAPIRequest(url, selectedFile, kValue);
       if (!request) return null;
-
-      const resp = await request.response;
-      return resp.body;
+      return JSON.parse(request.toString()).images;
     },
     enabled: false
   });
+
+  if (isLoading) {
+    return (
+      <Flex align="center" justify="center" style={{ height: '100vh' }}>
+        <Loader size={48} />
+      </Flex>
+    );
+  }
+
+  if (isError) {
+    notifications.show({
+      title: 'Error fetching results',
+      message: 'Please try again later!',
+      color: 'red'
+    });
+  }
 
   return (
     <Flex
@@ -97,9 +111,21 @@ const App = () => {
         </Button>
       </Flex>
 
-      {isLoading && <Text mt={10}>Fetching results...</Text>}
-      {isError && <Text mt={10}>Error fetching results!</Text>}
-      {responseData && <>{responseData}</>}
+      <Grid columns={3}>
+        {responseData?.map((imageURL, index) => (
+          <Grid.Col span={1} key={index}>
+            <Image
+              src={imageURL}
+              alt={`Result ${index + 1}`}
+              style={{
+                objectFit: 'cover',
+                maxWidth: '20rem',
+                maxHeight: '20rem'
+              }}
+            />
+          </Grid.Col>
+        ))}
+      </Grid>
     </Flex>
   );
 };

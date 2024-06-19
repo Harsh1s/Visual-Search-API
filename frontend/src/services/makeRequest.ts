@@ -9,7 +9,7 @@ export const makeAPIRequest = (url: string, imageFile: FileWithPath | null, k: n
       options: {
         body: { url, k }
       }
-    });
+    }).response.then((res) => res.body.json());
   }
 
   if (imageFile) {
@@ -23,7 +23,7 @@ export const makeAPIRequest = (url: string, imageFile: FileWithPath | null, k: n
         options: {
           body: { base64img: imgBase64, k }
         }
-      });
+      }).response.then((res) => res.body.json());
     };
   }
 
