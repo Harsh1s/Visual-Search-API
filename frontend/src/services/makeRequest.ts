@@ -1,30 +1,26 @@
+import axios from 'axios';
+import Config from '../config/config.json';
 import { FileWithPath } from '@mantine/dropzone';
-import { post } from 'aws-amplify/api';
 
-export const makeAPIRequest = (url: string, imageFile: FileWithPath | null, k: number) => {
+type ResponseData = {
+  images: string[];
+};
+
+export const makeAPIRequest = async (url: string, imageFile: FileWithPath | null, k: number) => {
   if (url != '') {
-    return post({
-      apiName: 'ImageSearch',
-      path: '/postURL',
-      options: {
-        body: { url, k }
-      }
-    }).response.then((res) => res.body.json());
+    return axios.post<ResponseData>(Config.apiEndpoint + '/postImage', { url, k });
   }
 
   if (imageFile) {
     const reader = new FileReader();
     reader.readAsDataURL(imageFile);
-    reader.onload = async () => {
-      const imgBase64 = reader.result?.toString().replace(/^data:image\/[a-z]+;base64,/, '')!;
-      return post({
-        apiName: 'ImageSearch',
-        path: '/postImage',
-        options: {
-          body: { base64img: imgBase64, k }
-        }
-      }).response.then((res) => res.body.json());
-    };
+    const imgBase64 = await new Promise<string>((resolve) => {
+      reader.onload = () => {
+        resolve(reader.result?.toString().replace(/^data:image\/[a-z]+;base64,/, '')!);
+      };
+    });
+
+    return axios.post<ResponseData>(Config.apiEndpoint + '/postImage', { base64img: imgBase64, k });
   }
 
   return null;
