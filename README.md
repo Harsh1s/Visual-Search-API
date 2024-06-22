@@ -18,7 +18,11 @@ Customers can search by taking a picture or describing a product in text. Result
 - A SageMaker Model is created from a pretrained CLIP model for batch and real-time inference.
 - SageMaker Batch Transform job is used to generate embeddings of product images.
 - SageMaker Serverless inference is used to encode query image and text into embeddings in real-time.
-- OpenSearch Service is the search engine to perform KNN-based search.
+- OpenSearch Service is t
+
+https://github.com/Harsh1s/Visual-Search-API/assets/96648934/271a7f42-d636-46b6-ac73-03eacf68ff40
+
+he search engine to perform KNN-based search.
 - A query function is used to orchestrate encoding query and perform KNN-based search.
 - SageMaker Studio Notebooks(not in the diagram) will be used as IDE to develop the solution.
 
