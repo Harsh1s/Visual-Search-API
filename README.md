@@ -1,0 +1,3 @@
+# Visual Search
+
+This project provides a complete solution for visual search for images, videos and text. The backend makes use of Amazon Sagemaker and other AWS services to provide a scalable and cost-effective API that can be used to search for similar images and videos, and apply contextual filters based on text as well as hard filters. The frontend is a simple web application that allows users to upload images and videos, and search for similar images and videos based on the uploaded content.
