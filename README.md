@@ -31,6 +31,8 @@ As seen in the video, you can use the [web application](https://viz-search.netli
 - A query function is used to orchestrate encoding query and perform KNN-based search.
 - `SageMaker Studio Notebooks` will be used as IDE to develop the solution.
 
+https://github.com/Harsh1s/Visual-Search-API/assets/96648934/271a7f42-d636-46b6-ac73-03eacf68ff40
+
 ## Dataset
 
 The `Amazon Berkeley Objects Dataset` is used in the implementation. The dataset is a collection of `147,702` product listings with multilingual metadata and `398,212` unique catalogue images. We will only make use of the item images and item names in US English. For demo purposes and costs consideration, we only trained the same to use ~1,600 products.
