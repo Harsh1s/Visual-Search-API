@@ -4,8 +4,9 @@ import { makeAPIRequest } from '../services/makeRequest';
 
 import Drop from './Dropzones/Drop';
 import { FileWithPath } from '@mantine/dropzone';
-import { Button, Flex, Grid, Input, Loader, Select, Text, Image, Title } from '@mantine/core';
+import { Button, Flex, Input, Loader, Select, Text } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
+import ImageSearchResults from './SearchResults';
 
 const ImageSearch = () => {
   const [kValue, setKValue] = useState<number>(5);
@@ -111,30 +112,7 @@ const ImageSearch = () => {
       </Flex>
 
       {/* Results */}
-      {responseData && (
-        <>
-          <Title order={4} pt="lg">
-            Results
-          </Title>
-          <Grid columns={3} gutter="md">
-            {responseData?.images.map((imageURL, index) => (
-              <Grid.Col span={1} key={index}>
-                <a href={imageURL} target="_blank">
-                  <Image
-                    src={imageURL}
-                    alt={`Result ${index + 1}`}
-                    style={{
-                      objectFit: 'cover',
-                      maxWidth: '10rem',
-                      maxHeight: '10rem'
-                    }}
-                  />
-                </a>
-              </Grid.Col>
-            ))}
-          </Grid>
-        </>
-      )}
+      <ImageSearchResults data={responseData} />
     </Flex>
   );
 };

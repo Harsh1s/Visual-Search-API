@@ -1,14 +1,29 @@
 import axios from 'axios';
-import Config from '../config/config.json';
 import { FileWithPath } from '@mantine/dropzone';
 
 type ResponseData = {
   images: string[];
 };
 
-export const makeAPIRequest = async (url: string, imageFile: FileWithPath | null, k: number) => {
+export const makeAPIRequest = async (
+  url: string,
+  imageFile: FileWithPath | null,
+  k: number,
+  fileContent: string | null = null
+) => {
   if (url != '') {
-    return axios.post<ResponseData>(Config.apiEndpoint + '/postImage', { url, k });
+    return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postImage', {
+      url,
+      k
+    });
+  }
+
+  if (fileContent) {
+    const imgBase64 = fileContent.replace(/^data:image\/[a-z]+;base64,/, '');
+    return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postImage', {
+      base64img: imgBase64,
+      k
+    });
   }
 
   if (imageFile) {
@@ -20,7 +35,10 @@ export const makeAPIRequest = async (url: string, imageFile: FileWithPath | null
       };
     });
 
-    return axios.post<ResponseData>(Config.apiEndpoint + '/postImage', { base64img: imgBase64, k });
+    return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postImage', {
+      base64img: imgBase64,
+      k
+    });
   }
 
   return null;
