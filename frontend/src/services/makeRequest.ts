@@ -12,7 +12,7 @@ export const makeAPIRequest = async (
   fileContent: string | null = null
 ) => {
   if (url != '') {
-    return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postImage', {
+    return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postURL', {
       url,
       k
     });

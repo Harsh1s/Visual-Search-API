@@ -4,7 +4,7 @@ import { makeAPIRequest } from '../services/makeRequest';
 
 import Drop from './Dropzones/Drop';
 import { FileWithPath } from '@mantine/dropzone';
-import { Button, Flex, Input, Loader, Select, Text } from '@mantine/core';
+import { Button, Flex, TextInput, Loader, Select, Text } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import ImageSearchResults from './SearchResults';
 
@@ -98,7 +98,7 @@ const ImageSearch = () => {
           <Text size="lg">OR</Text>
           <Flex align="center" justify="center" gap="sm" direction="column">
             <Text size="sm">Enter the URL of the image!</Text>
-            <Input
+            <TextInput
               placeholder="URL"
               disabled={isLoading}
               value={url}

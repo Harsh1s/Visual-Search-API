@@ -18,7 +18,6 @@ export default function VideoSearch() {
     queryFn: () => makeAPIRequest('', null, 6, imageData)
   });
 
-  console.log(isLoading, responseData?.data);
   return (
     <Flex direction="column">
       <Flex direction="row" justify="space-around" align="center">
