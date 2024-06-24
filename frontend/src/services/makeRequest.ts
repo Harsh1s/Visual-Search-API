@@ -18,7 +18,7 @@ export const makeAPIRequest = async (
     });
   }
 
-  if (fileContent || imageFile) {
+  if (fileContent) {
     // const imgBase64 = fileContent.replace(/^data:image\/[a-z]+;base64,/, '');
     // return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postImage', {
     //   base64img: imgBase64,
@@ -48,17 +48,32 @@ export const makeAPIRequest = async (
   }
 
   if (imageFile) {
-    const reader = new FileReader();
-    reader.readAsDataURL(imageFile);
-    const imgBase64 = await new Promise<string>((resolve) => {
-      reader.onload = () => {
-        resolve(reader.result?.toString().replace(/^data:image\/[a-z]+;base64,/, '')!);
-      };
-    });
+    // const reader = new FileReader();
+    // reader.readAsDataURL(imageFile);
+    // const imgBase64 = await new Promise<string>((resolve) => {
+    //   reader.onload = () => {
+    //     resolve(reader.result?.toString().replace(/^data:image\/[a-z]+;base64,/, '')!);
+    //   };
+    // });
 
-    return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postImage', {
-      base64img: imgBase64,
-      k
+    // return axios.post<ResponseData>(import.meta.env.VITE_BACKEND_API_URL + '/postImage', {
+    //   base64img: imgBase64,
+    //   k
+    // });
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({
+          data: {
+            images: [
+              'https://m.media-amazon.com/images/I/61WkoW-zDSL._SY550_.jpg',
+              'https://m.media-amazon.com/images/I/61FEpKTUAIL._SY741_.jpg',
+              'https://m.media-amazon.com/images/I/41f19rm8-LL._SX522_.jpg',
+              'https://m.media-amazon.com/images/I/51rc1bXe6wL._SX679_.jpg',
+              'https://m.media-amazon.com/images/I/61sx8iVBhCL._AC_UL320_.jpg'
+            ].slice(0, k)
+          }
+        });
+      }, 2000);
     });
   }
 
