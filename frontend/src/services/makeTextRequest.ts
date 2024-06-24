@@ -30,7 +30,11 @@ export const makeTextRequest = async (
     setTimeout(() => {
       resolve({
         data: {
-          images: images.slice(0, k)
+          images: images
+            .map((value) => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value }) => value)
+            .slice(0, k)
         }
       });
     }, 2000);

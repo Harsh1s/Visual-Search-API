@@ -36,7 +36,11 @@ export const makeAPIRequest = async (
               'https://m.media-amazon.com/images/I/51Xkme6x34L._AC_UL320_.jpg',
               'https://m.media-amazon.com/images/I/51QZxiYrXaL._AC_UL320_.jpg',
               'https://m.media-amazon.com/images/I/51uCdvvXriL._AC_SY445_.jpg'
-            ].slice(0, k)
+            ]
+              .map((value) => ({ value, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ value }) => value)
+              .slice(0, k)
           }
         });
       }, 2000);
