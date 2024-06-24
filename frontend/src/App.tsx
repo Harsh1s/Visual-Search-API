@@ -1,6 +1,7 @@
 import { Tabs } from '@mantine/core';
 import ImageSearch from './components/ImageSearch';
 import VideoSearch from './components/VideoSearch';
+import TextSearch from './components/TextSearch';
 
 const App = () => {
   const tabData = [
@@ -15,6 +16,12 @@ const App = () => {
       slug: 'video_search',
       component: <VideoSearch />,
       color: 'teal'
+    },
+    {
+      name: 'Text Search',
+      slug: 'text_search',
+      component: <TextSearch />,
+      color: 'red'
     }
   ];
 
