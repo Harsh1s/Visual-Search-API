@@ -2,9 +2,16 @@ import { Tabs } from '@mantine/core';
 import ImageSearch from './components/ImageSearch';
 import VideoSearch from './components/VideoSearch';
 import TextSearch from './components/TextSearch';
+import SearchSpotlight from './components/webstore/SearchSpotlight';
 
 const App = () => {
   const tabData = [
+    {
+      name: 'Web Store',
+      slug: 'web_store',
+      component: <SearchSpotlight />,
+      color: 'indigo'
+    },
     {
       name: 'Image Search',
       slug: 'image_search',

@@ -8,7 +8,7 @@ type PropType = {
   currentFile: FileWithPath | null;
 };
 
-export default function VedioDropzone(props: PropType) {
+export default function VideoDropzone(props: PropType) {
   return (
     <Dropzone
       style={{
