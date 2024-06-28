@@ -15,7 +15,7 @@ type PropType = {
 export default function FileManager(props: PropType) {
   return (
     <Dropzone
-      className={clsx('my-4 max-w-2xl', {
+      className={clsx('my-4 max-w-sm', {
         'border-2 w-full mx-auto': !props.currentFile,
         'border-2 w-1/2': props.currentFile
       })}

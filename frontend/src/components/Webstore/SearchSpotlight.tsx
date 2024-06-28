@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Modal, TextInput } from '@mantine/core';
+import { Flex, Modal, TextInput } from '@mantine/core';
 import { FileWithPath } from '@mantine/dropzone';
 import { useDisclosure, useHotkeys } from '@mantine/hooks';
 
 import FileManager from './FileManager';
+import HardFilters from './HardFilters';
 
 const SearchSpotlight = () => {
   const [isModalOpen, { open: openModal, close: closeModal }] = useDisclosure(false);
@@ -34,7 +35,11 @@ const SearchSpotlight = () => {
         onChange={(event) => setQueryText(event.currentTarget.value)}
         placeholder="What are you looking for today?"
       />
-      <FileManager currentFile={uploadedFile} setFile={setUploadedFile} />
+
+      <Flex align="center" justify="space-around" direction="row" p="xs">
+        <FileManager currentFile={uploadedFile} setFile={setUploadedFile} />
+        {(uploadedFile || queryText !== '') && <HardFilters />}
+      </Flex>
     </Modal>
   );
 };
