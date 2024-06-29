@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 type ResponseData = {
   images: string[];
 };
@@ -16,7 +14,7 @@ const images = [
 ];
 
 export const makeTextRequest = async (
-  queryText: string,
+  _queryText: string,
   k: number
 ): Promise<{
   data: ResponseData;

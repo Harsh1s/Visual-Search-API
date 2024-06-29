@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Accmetees Women Graphic Printed Round Neck Oversized T-Shirt",
+    "price": 349,
+    "imageURL": "https://m.media-amazon.com/images/I/41xWia1IA3L._SY500_.jpg",
+    "rating": 4.5,
+    "brand": "Accmetees",
+    "amazonURL": "https://www.amazon.in/Accmetees-Oversize-Cotton-Graphic-Printed/dp/B0CVMZSY5D/",
+    "type": "query"
+  },
+  {
+    "id": 2,
+    "name": "RodZen Cotton Half Sleeve Solid Basic Oversized",
+    "price": 299,
+    "imageURL": "https://m.media-amazon.com/images/I/513n4h8M9AL._SY550_.jpg",
+    "rating": 4.2,
+    "brand": "RodZen",
+    "amazonURL": "https://www.amazon.in/RodZen-Cotton-Oversized-T-Shirt-RZ01WSOLIDWHITE-2XL_White_2XL/dp/B0BGLD42RG/",
+    "type": "query"
+  },
+  {
+    "id": 3,
+    "name": "Men's Dazzler Sneakers",
+    "price": 1489,
+    "imageURL": "https://m.media-amazon.com/images/I/51GOpp8rAJL._SY695_.jpg",
+    "rating": 4,
+    "brand": "Puma",
+    "amazonURL": "https://www.amazon.in/Puma-Dazzler-Black-Puma-Silver-Sneaker/dp/B09RGJCVW6/",
+    "type": "home"
+  },
+  {
+    "id": 4,
+    "name": "Urban Spoon Raga Double Walled Stainless Steel Serving Bowl",
+    "price": 1839,
+    "amazonURL": "https://www.amazon.in/Double-Walled-Stainless-Serving-Storage/dp/B08HJKXVVB/",
+    "imageURL": "https://m.media-amazon.com/images/I/61cX4WjiBmL._SX425_.jpg",
+    "rating": 5,
+    "brand": "Urban Spoon",
+    "type": "home"
+  },
+  {
+    "id": 5,
+    "name": "Dove Deeply Nourishing Body Wash",
+    "price": 343,
+    "amazonURL": "https://www.amazon.in/Dove-Deeply-Nourishing-Body-Wash/dp/B07S7R626P",
+    "imageURL": "https://m.media-amazon.com/images/I/419w4PBH11L._SY450_.jpg",
+    "rating": 4.2,
+    "brand": "Dove",
+    "type": "home"
+  },
+  {
+    "id": 6,
+    "name": "Good Knight Gold Flash Liquid Vapourizer",
+    "price": 264,
+    "amazonURL": "https://www.amazon.in/Good-Vapourizer-Mosquito-Repellent-Fragrance/dp/B0C86RTS5X",
+    "imageURL": "https://m.media-amazon.com/images/I/71xae7DTrxL._SY342_.jpg",
+    "rating": 4.2,
+    "brand": "Good Knight",
+    "type": "home"
+  },
+  {
+    "id": 7,
+    "name": "Fire Boll Ninja Call Pro Plus Smart Watch",
+    "price": 1299,
+    "amazonURL": "https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Resolution/dp/B0BF57RN3K/",
+    "imageURL": "https://m.media-amazon.com/images/I/61AHiYyu3ZL._SY450_.jpg",
+    "rating": 4,
+    "brand": "Fire Boltt",
+    "type": "home"
+  },
+  {
+    "id": 8,
+    "name": "Portronics Toad 23 Wireless Optical Mouse",
+    "price": 299,
+    "amazonURL": "https://www.amazon.in/Portronics-Wireless-Optical-Orientation-Adjustable/dp/B0B296NTFV/",
+    "imageURL": "https://m.media-amazon.com/images/I/41KuRShR97L._SY450_.jpg",
+    "rating": 5,
+    "brand": "Portronics",
+    "type": "home"
+  },
+  {
+    "id": 9,
+    "name": "Safari Omega Laptop Backpack with Raincover",
+    "price": 679,
+    "amazonURL": "https://www.amazon.in/Safari-Laptop-Backpack-Raincover-college/dp/B097JJ2CK6/",
+    "imageURL": "https://m.media-amazon.com/images/I/71maWXZscfL._SX679_.jpg",
+    "rating": 4,
+    "brand": "Safari Omega",
+    "type": "home"
+  },
+  {
+    "id": 10,
+    "name": "Blowhot Premium Design Emerald Heavy Tornado Brass 3 Burner Auto Ignition Gas Stove",
+    "price": 679,
+    "amazonURL": "https://www.amazon.in/BLOWHOT-Premium-Emerald-Tornado-Ignition/dp/B0CGNVLTLB/",
+    "imageURL": "https://m.media-amazon.com/images/I/412elDL+vmL._SX425_.jpg",
+    "rating": 5,
+    "brand": "Blowhot",
+    "type": "home"
+  },
+  {
+    "id": 11,
+    "name": "Bniture Bed Side Table for Bedroom",
+    "price": 5669,
+    "amazonURL": "https://www.amazon.in/Bniture-1Drawer-Nightstand-Bedside-Bedrooms/dp/B0CT397GV9/",
+    "imageURL": "https://m.media-amazon.com/images/I/81sSEjQbMKL._SX425_.jpg",
+    "rating": 4,
+    "brand": "Bniture",
+    "type": "home"
+  },
+  {
+    "id": 12,
+    "name": "Callas Multipurpose Foldable Laptop Table with Cup Holder",
+    "price": 500,
+    "amazonURL": "https://www.amazon.in/Callas-Multipurpose-Breakfast-Ergonomic-WA-27-Black/dp/B08MZQBFLN/",
+    "imageURL": "https://m.media-amazon.com/images/I/61GQUtqKIpS._SX425_.jpg",
+    "rating": 5,
+    "brand": "Callas",
+    "type": "home"
+  }
+]

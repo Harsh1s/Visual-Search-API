@@ -1,6 +1,8 @@
 import React from 'react';
 
-import App from './App';
+// import App from './App';
+import Webstore from './components/Webstore';
+
 import { createRoot } from 'react-dom/client';
 import { Notifications } from '@mantine/notifications';
 import { createTheme, MantineProvider } from '@mantine/core';
@@ -21,7 +23,8 @@ root.render(
     <QueryClientProvider client={queryClient}>
       <MantineProvider theme={theme}>
         <Notifications />
-        <App />
+        {/* <App /> */}
+        <Webstore />
       </MantineProvider>
     </QueryClientProvider>
   </React.StrictMode>
