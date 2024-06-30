@@ -118,5 +118,105 @@
     "rating": 5,
     "brand": "Callas",
     "type": "home"
+  },
+  {
+    "id": 13,
+    "name": "Bewakoof Women's Graphic Printed 100% Cotton T-Shirt - Slim Fit, Round Neck, Half Sleeves",
+    "price": 259,
+    "imageURL": "https://m.media-amazon.com/images/I/51puNph6HJL._SX679_.jpg",
+    "rating": 4.0,
+    "brand": "Bewakoof",
+    "amazonURL": "https://amzn.in/d/0iazuch8",
+    "type": "query"
+  },
+  {
+    "id": 14,
+    "name": "Levi's Women's Slim Fit Batwing Graphic Print T-Shirt",
+    "price": 999,
+    "imageURL": "https://m.media-amazon.com/images/I/81iaX6+XE7L._SX569_.jpg",
+    "rating": 4.1,
+    "brand": "Levi's",
+    "amazonURL": "https://amzn.in/d/0jikDsEy",
+    "type": "query"
+  },
+  {
+    "id": 15,
+    "name": "Max Women's Regular Fit T-Shirt (MARS4BWHITE_WHITE",
+    "price": 199,
+    "imageURL": "https://m.media-amazon.com/images/I/81UViYvCIKL._SX569_.jpg",
+    "rating": 3.8,
+    "brand": "Max",
+    "amazonURL": "https://amzn.in/d/0709ZzFw",
+    "type": "query"
+  },
+  {
+    "id": 16,
+    "name": "JUNEBERRY® 100% Pure Cotton Oversized Loose Baggy Fit Drop Shoulder Half Sleeve Round Neck Cool Front Teddy Printed Cork & White T-Shirt for Women/Girls (Available in from S to 2XL)",
+    "price": 325,
+    "imageURL": "https://m.media-amazon.com/images/I/61kYcwuPj-L._SY741_.jpg",
+    "rating": 4.0,
+    "brand": "JUNEBERRY",
+    "amazonURL": "https://amzn.in/d/01nN7R8z",
+    "type": "query"
+  },
+  {
+    "id": 17,
+    "name": "LEOTUDE Women's Oversized Cottonblend Half Sleeve Printed Regular Fit T-Shirts",
+    "price": 298,
+    "imageURL": "https://m.media-amazon.com/images/I/61uHcuurFbL._SY741_.jpg",
+    "rating": 3.8,
+    "brand": "LEOTUDE",
+    "amazonURL": "https://amzn.in/d/09uyx6Cu",
+    "type": "query"
+  },
+  {
+    "id": 18,
+    "name": "U.S. POLO ASSN. Men Crew Neck Embroidered Logo I633 Lounge Regular Fit T-Shirt (Pack of 1)",
+    "price": 629,
+    "imageURL": "https://m.media-amazon.com/images/I/71-6lZ6yNeL._SX679_.jpg",
+    "rating": 3.8,
+    "brand": "U.S. POLO ASSN.",
+    "amazonURL": "https://amzn.in/d/03SafPn3",
+    "type": "home"
+  },
+  {
+    "id": 19,
+    "name": "Van Heusen Men's Regular Fit T-Shirt",
+    "price": 799,
+    "imageURL": "https://m.media-amazon.com/images/I/61f5Gdl9+bL._SX679_.jpg",
+    "rating": 4.2,
+    "brand": "Van Heusen",
+    "amazonURL": "https://amzn.in/d/0fD6fSxg",
+    "type": "home"
+  },
+  {
+    "id": 20,
+    "name": "Ben Martin Men's Denim Cotton Oversized Loose Baggy Fit Jeans Pants for Men",
+    "price": 799,
+    "imageURL": "https://m.media-amazon.com/images/I/71OBVZ-69WL._SY741_.jpg",
+    "rating": 4.2,
+    "brand": "Ben Martin",
+    "amazonURL": "https://amzn.in/d/03LjxWJm",
+    "type": "home"
+  },
+  {
+    "id": 21,
+    "name": "KOTTY Womens Solid High Rise Cotton Lycra Blend Relaxed Fit Ankle Length Jeans",
+    "price": 599,
+    "imageURL": "https://m.media-amazon.com/images/I/61PsU4SFrEL._SY741_.jpg",
+    "rating": 3.7,
+    "brand": "KOTTY",
+    "amazonURL": "https://amzn.in/d/01ntlDT2",
+    "type": "home"
+  },
+  {
+    "id": 22,
+    "name": "Allen Solly Men Regular Fit Jeans",
+    "price": 1039,
+    "imageURL": "https://m.media-amazon.com/images/I/518q3Yxd0pL._SY741_.jpg",
+    "rating": 3.5,
+    "brand": "Allen Solly",
+    "amazonURL": "https://amzn.in/d/0gKynZ93",
+    "type": "home"
   }
 ]
